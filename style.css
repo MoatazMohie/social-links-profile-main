@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Inter';
+}
+
+body{
+    width: 1440px;
+    /* height: 960px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Off-Black);
+}
+
+.container {
+    width: 385px;
+    height: 612px;
+    margin: 174px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1rem;
+    width: 60%;
+    height: auto;
+    background-color: var(--Dark-Grey);
+    border-radius: 14px;
+    padding: 2rem;
+}
+
+img {
+    width: 90px;
+    border-radius: 50%;
+    width: 25%;
+    margin: 30px 0;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 6rem;
+    color: var(--White);
+    margin-bottom: 16px;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: var(--Green);
+    margin-bottom: 30px;
+}
+
+p {
+    color: var(--White);
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-bottom: 26px;
+}
+
+button{
+    width: 85%;
+    height: 10rem;
+    background-color: var(--Grey);
+    border: none;
+    border-radius: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+button:last-of-type {
+    margin-bottom: 41px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: var(--Green);
+}
+
+button a {
+    margin: 3rem 0;
+    color: var(--White);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+button:hover a {
+    color: var(--Dark-Grey);
+
+}
+
+@media only screen and (max-width: 375px){
+    .container {
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+}
